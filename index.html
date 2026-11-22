@@ -728,7 +728,7 @@ body{background:var(--bg)}
 .pz-n{display:grid;place-items:center;width:34px;height:34px;border:2px solid #F4C542;border-radius:52% 48% 55% 45%/48% 55% 45% 52%;color:#F4C542;font:800 19.5px/1 var(--display);transform:rotate(-4deg)}
 .pz-list li:nth-child(2) .pz-n{border-radius:46% 54% 48% 52%/55% 45% 52% 48%;transform:rotate(5deg)}
 .pz-list h3{margin:0 0 4px;font:800 20.5px/1.25 var(--display);color:#FFF}
-  .pz-list p{margin:0;font:400 16.5px/1.6 var(--body);color:rgba(244,241,230,.9)}
+.pz-list p{margin:0;font:400 16.5px/1.6 var(--body);color:rgba(244,241,230,.9)}
 .pz-list b{color:#FFF;font-weight:800}
 /* contacto de punta a punta + avisos de envío */
 #contact .cform,#contact .cdone{max-width:none;width:100%}
@@ -1381,13 +1381,23 @@ background:linear-gradient(90deg,rgba(0,0,0,.35) 0,rgba(0,0,0,0) 26px),linear-gr
 /* v178 emblema con "Solo en Rosario" */
 :root:root:root:root #homeLogo svg{width:112px}
 @media (max-width:560px){:root:root:root:root #homeLogo svg{width:70px}}
+/* v185 texto copiable tambien dentro de las tarjetas (botones) */
+.area-btn,.area-btn *,button.mode,button.mode *,.bk,.bk *,.part-card,.part-card *,#results,#results *,.panel,.panel *{-webkit-user-select:text;user-select:text}
+.area-btn,button.mode{cursor:pointer}
+.nm,.ds,.l2,.why{cursor:text}
+/* v191 Áreas de estudio en imprenta */
+:root:root:root #explore .hlink .hd{font-family:TizaCaps,'Segoe Print','Bradley Hand','Comic Sans MS',system-ui,sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.02em;font-size:clamp(22px,5.4vw,38px)}
+/* v192 Áreas de estudio escrito con fibrón */
+:root:root:root:root #explore .hlink .hd{color:#1E130C;filter:none;text-shadow:none;font-family:TizaCaps,'Segoe Print','Bradley Hand','Comic Sans MS',system-ui,sans-serif;font-weight:800;text-transform:uppercase}
+:root:root:root:root #explore .hlink .ht{color:#1E130C;filter:none;-webkit-text-stroke:0;text-shadow:0 0 .6px rgba(30,19,12,.5);letter-spacing:.03em;font-family:inherit;font-weight:inherit;text-transform:uppercase}
+@media (max-width:480px){:root:root:root:root #explore .hlink .hd{font-size:clamp(20px,5.6vw,26px)}}
 </style>
 
 <div class="shell">
   <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><filter id="chalkTx" x="-5%" y="-10%" width="110%" height="120%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="2" seed="4" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="1.8" xChannelSelector="R" yChannelSelector="G" result="d"/><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="9" result="g"/><feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.5 1.75" result="m"/><feComposite in="d" in2="m" operator="in"/></filter></svg>
   <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><filter id="chalkWob1" x="-6%" y="-6%" width="112%" height="112%"><feTurbulence type="fractalNoise" baseFrequency="0.011 0.013" numOctaves="1" seed="3" result="w"/><feDisplacementMap in="SourceGraphic" in2="w" scale="7" xChannelSelector="R" yChannelSelector="G"/></filter><filter id="chalkWob2" x="-6%" y="-6%" width="112%" height="112%"><feTurbulence type="fractalNoise" baseFrequency="0.011 0.013" numOctaves="1" seed="11" result="w"/><feDisplacementMap in="SourceGraphic" in2="w" scale="7" xChannelSelector="R" yChannelSelector="G"/></filter><filter id="chalkWob3" x="-6%" y="-6%" width="112%" height="112%"><feTurbulence type="fractalNoise" baseFrequency="0.011 0.013" numOctaves="1" seed="7" result="w"/><feDisplacementMap in="SourceGraphic" in2="w" scale="7" xChannelSelector="R" yChannelSelector="G"/></filter><filter id="chalkWob4" x="-6%" y="-6%" width="112%" height="112%"><feTurbulence type="fractalNoise" baseFrequency="0.011 0.013" numOctaves="1" seed="19" result="w"/><feDisplacementMap in="SourceGraphic" in2="w" scale="7" xChannelSelector="R" yChannelSelector="G"/></filter><filter id="chalkMonu" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.17" numOctaves="2" seed="6" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G" result="d"/><feTurbulence type="fractalNoise" baseFrequency="0.17" numOctaves="2" seed="14" result="g"/><feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.3 1.7" result="m"/><feComposite in="d" in2="m" operator="in"/></filter><filter id="chalkSm" x="-2%" y="-5%" width="104%" height="110%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="6" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="1.1" xChannelSelector="R" yChannelSelector="G" result="d"/><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="14" result="g"/><feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.3 1.7" result="m"/><feComposite in="d" in2="m" operator="in"/></filter></svg>
   <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><filter id="chalkHand" x="-4%" y="-6%" width="108%" height="112%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="7" result="w"/><feDisplacementMap in="SourceGraphic" in2="w" scale="4.5" xChannelSelector="R" yChannelSelector="G" result="d0"/><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="6" result="n"/><feDisplacementMap in="d0" in2="n" scale="1.3" xChannelSelector="R" yChannelSelector="G" result="d"/><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="21" result="g"/><feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.5 1.75" result="m"/><feComposite in="d" in2="m" operator="in"/></filter></svg>
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><filter id="marker" x="-4%" y="-12%" width="108%" height="124%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="5" result="w"/><feDisplacementMap in="SourceGraphic" in2="w" scale="1.7" xChannelSelector="R" yChannelSelector="G" result="d"/><feGaussianBlur in="d" stdDeviation="0.45" result="b"/><feComponentTransfer in="b"><feFuncA type="linear" slope="1.6" intercept="-0.05"/></feComponentTransfer></filter></svg>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><filter id="fibron" x="-4%" y="-14%" width="108%" height="128%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="1" seed="9" result="w"/><feDisplacementMap in="SourceGraphic" in2="w" scale="0.5" xChannelSelector="R" yChannelSelector="G" result="d"/><feGaussianBlur in="d" stdDeviation="0.8" result="b"/><feComponentTransfer in="b"><feFuncA type="linear" slope="14" intercept="-6.2"/></feComponentTransfer></filter><filter id="marker" x="-4%" y="-12%" width="108%" height="124%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="5" result="w"/><feDisplacementMap in="SourceGraphic" in2="w" scale="1.7" xChannelSelector="R" yChannelSelector="G" result="d"/><feGaussianBlur in="d" stdDeviation="0.45" result="b"/><feComponentTransfer in="b"><feFuncA type="linear" slope="1.6" intercept="-0.05"/></feComponentTransfer></filter></svg>
   
 </head>
 <body>
@@ -1400,35 +1410,15 @@ background:linear-gradient(90deg,rgba(0,0,0,.35) 0,rgba(0,0,0,0) 26px),linear-gr
       <div class="hero-t">
         <p class="eyebrow-b">Test vocacional</p>
         <h1>Encontrá tu rumbo</h1>
-        <p class="lead-p">Un test de orientación vocacional, basado en el modelo de intereses de Holland, para explorar qué estudiar en Rosario.</p>
         <button type="button" class="btn hero-b" id="heroRes" data-tab="results" hidden>Ver mis resultados</button>
       </div>
     </div>
 
-    <div class="blk" id="find">
-      <h2 class="hd">Lo que vas a encontrar</h2>
-      <ul class="find" id="findList" style="margin-top:8px"></ul>
-    </div>
-
-
-    <div class="blk" id="aviso">
-      <section class="pz" aria-labelledby="avT">
-        <div class="pz-head">
-          <span class="pz-bang" aria-hidden="true">!</span>
-          <div><p class="pz-kick">Leé esto primero</p><h2 id="avT">Antes de empezar</h2></div>
-        </div>
-        <ol class="pz-list">
-          <li><span class="pz-n" aria-hidden="true">1</span><div><h3>Batería completa</h3><p>Es el test principal: 135 preguntas en seis módulos (intereses, habilidades, entorno de trabajo, valores, estilo personal y razonamiento). Podés hacerla en varias veces: tu avance queda guardado en este navegador. Al completar los seis módulos se arma un informe en profundidad, a tu medida.</p></div></li>
-          <li><span class="pz-n" aria-hidden="true">2</span><div><h3>Tests rápidos</h3><p>Cuatro formatos: Clásico, Esto o aquello, Cuatro escenas y Armá tu semana. Para ver las áreas que te recomendamos hay que completar los cuatro: cada uno pregunta de una manera distinta y, juntos, dan un resultado más confiable. Igual es una orientación <b>preliminar</b>: sirve para una primera idea, no para decidir una carrera. Para recomendaciones en profundidad y a tu medida, es mejor hacer la batería completa.</p></div></li>
-          <li><span class="pz-n" aria-hidden="true">3</span><div><h3>Cómo leer tus resultados</h3><p>Ningún test elige tu carrera por vos: ayuda a ordenar tus intereses. Después contrastalo con la oferta real, con profesionales de la actividad y con orientadores.</p></div></li>
-        </ol>
-      </section>
-    </div>
 
     <div class="gate" id="gate">
     <div class="blk" id="bank">
       <h2 class="hd">Batería completa</h2>
-      
+      <p class="fmtnote">Una batería completa de seis módulos para ir más a fondo, que abarca intereses, confianza en las propias habilidades, entorno de trabajo ideal, valores, estilo personal y razonamiento. Se separa lo que te atrae de lo que sentís que se te da bien, ya que no siempre coinciden pero ambos son importantes. Al terminar los seis se habilita un informe completo, con recomendaciones en profundidad y a tu medida.</p>
       <div class="cards cards3" id="bankList"></div>
       <div id="bankSum"></div>
     </div>
@@ -2057,11 +2047,6 @@ background:linear-gradient(90deg,rgba(0,0,0,.35) 0,rgba(0,0,0,0) 26px),linear-gr
   }
   function areaComp(id){ if (!AREA_COMP) buildAreaComps(); return AREA_COMP[id] || null; }
   function artIdx(s){ var h = 0; for (var i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0; return Math.abs(h) % COMPS.length; }
-  $('findList').innerHTML = [
-    ['perfil','teal','Tu perfil','Un resumen de los tipos de actividades que más te interesan y cómo se combinan en vos.'],
-    ['areas','yellow','Áreas y carreras','Opciones de estudio que encajan con tu perfil, desde carreras cortas hasta posgrados.'],
-    ['donde','pink','Dónde estudiar','Universidades, institutos universitarios y terciarios de Rosario: grado, posgrado y tecnicaturas, por área.']
-  ].map(function(x){ return '<li class="h-' + x[1] + '"><span class="ico">' + ICON[x[0]] + '</span><b>' + x[2] + '</b><span class="t">' + x[3] + '</span></li>'; }).join('');
 
   /* ---------- Instituciones por carrera (solo oferta confirmada en Rosario) ---------- */
   var openLv = {};
@@ -2413,6 +2398,7 @@ background:linear-gradient(90deg,rgba(0,0,0,.35) 0,rgba(0,0,0,0) 26px),linear-gr
     semana:'<svg class="bkd" viewBox="0 0 200 120" aria-hidden="true" focusable="false"><g filter="url(#chalkWob4)"><g filter="url(#chalkSm)" stroke="#F1EFE4" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><rect x="38" y="16" width="124" height="90" rx="8"/><path d="M38 36H162"/><path d="M64 8V24M100 8V24M136 8V24"/><rect x="48" y="42" width="18" height="16" rx="3" fill="#C3B3F0" fill-opacity=".55" stroke-width="2"/><rect x="70" y="42" width="18" height="16" rx="3" fill="#9FDDB4" fill-opacity=".55" stroke-width="2"/><rect x="92" y="42" width="18" height="16" rx="3" fill="#8FD3F4" fill-opacity=".55" stroke-width="2"/><rect x="114" y="42" width="18" height="16" rx="3" fill="#F2A7B5" fill-opacity=".55" stroke-width="2"/><rect x="136" y="42" width="18" height="16" rx="3" stroke-width="1.8" stroke-opacity=".6"/><rect x="48" y="63" width="18" height="16" rx="3" stroke-width="1.8" stroke-opacity=".6"/><rect x="70" y="63" width="18" height="16" rx="3" stroke-width="1.8" stroke-opacity=".6"/><rect x="92" y="63" width="18" height="16" rx="3" fill="#F4C542" fill-opacity=".55" stroke-width="2"/><rect x="114" y="63" width="18" height="16" rx="3" stroke-width="1.8" stroke-opacity=".6"/><rect x="136" y="63" width="18" height="16" rx="3" fill="#C3B3F0" fill-opacity=".55" stroke-width="2"/><rect x="48" y="84" width="18" height="16" rx="3" fill="#8FD3F4" fill-opacity=".55" stroke-width="2"/><rect x="70" y="84" width="18" height="16" rx="3" fill="#9FDDB4" fill-opacity=".55" stroke-width="2"/><rect x="92" y="84" width="18" height="16" rx="3" stroke-width="1.8" stroke-opacity=".6"/><rect x="114" y="84" width="18" height="16" rx="3" fill="#F4C542" fill-opacity=".55" stroke-width="2"/><rect x="136" y="84" width="18" height="16" rx="3" fill="#F2A7B5" fill-opacity=".55" stroke-width="2"/></g></g></svg>'
   };
 
+  var QDESC = 'Cuatro tests rápidos con cuatro formatos distintos, desde estilos más clásicos hasta otros más dinámicos, pensados para que te lleves una primera orientación sobre tus intereses. Los resultados no son un diagnóstico definitivo sino una orientación general, ya que para obtener resultados más precisos lo ideal es completar la batería completa.';
   function renderModes(){
     var n = nDone(), tot = MODE_LIST.length;
     $('modeList').innerHTML = MODE_LIST.map(function(m){
@@ -2426,9 +2412,7 @@ background:linear-gradient(90deg,rgba(0,0,0,.35) 0,rgba(0,0,0,0) 26px),linear-gr
     var top = $('fmtTop');
     if (!top) return;
     top.innerHTML =
-      '<p class="fmtnote">' + (n === tot
-        ? '<b>Completaste los cuatro.</b> Ya podés ver las áreas que te recomendamos. Si querés, repetí algún formato para ver si tu resultado se mantiene.'
-        : 'Para ver las áreas que te recomendamos tenés que completar los <b>cuatro</b> tests rápidos' + (n ? ' (llevás ' + n + ' de ' + tot + ')' : '') + ': cada uno pregunta de una manera distinta y, juntos, dan un resultado más confiable. Igual es una primera orientación: para recomendaciones en profundidad y a tu medida, es mejor hacer la batería completa.') + '</p>' +
+      '<p class="fmtnote">' + QDESC + (n === tot ? ' <b>Completaste los cuatro.</b> Si querés, repetí algún formato para ver si tu resultado se mantiene.' : '') + '</p>' +
       '<div class="btnrow">' +
         (n === tot ? '<button type="button" class="btn" id="fmtRes">Ver mis resultados</button>' : '') +
         (n ? '<button type="button" class="btn alt" id="fmtReset">' + (resetArmed ? 'Tocá de nuevo para borrar' : 'Borrar mi avance') + '</button>' : '') +
@@ -2502,6 +2486,13 @@ background:linear-gradient(90deg,rgba(0,0,0,.35) 0,rgba(0,0,0,0) 26px),linear-gr
     var el = $(dest);
     if (el) el.scrollIntoView({behavior:'smooth', block:'start'});
   }
+  /* si hay texto seleccionado (arrastre para copiar), el clic de soltar no abre ni cierra la tarjeta */
+  document.addEventListener('click', function(e){
+    var t = e.target, bt = t && t.closest ? t.closest('button.area-btn, button.mode') : null;
+    if (!bt) return;
+    var sel = window.getSelection && window.getSelection();
+    if (sel && !sel.isCollapsed && String(sel).length > 0 && bt.contains(sel.anchorNode)){ e.stopImmediatePropagation(); e.preventDefault(); }
+  }, true);
   document.addEventListener('click', function(e){
     var tb = e.target.closest('.ntab');
     if (tb){ goTo('areas'); if (window._openArea) window._openArea(tb.getAttribute('data-area')); return; }
@@ -3520,7 +3511,7 @@ window._tiza = {areas:AREAS, doneModes:doneModes};
     var ov = null, raf = 0, S = null, cur = [0, 0], armed = true;
 
     function E(n, a, p){ var e = document.createElementNS(NS, n); for (var k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; }
-    function ease(t){ var s = t * t * (3 - 2 * t); return t * 0.55 + s * 0.45; }
+    function ease(t){ var u = Math.pow(t, .88), s = u * u * (3 - 2 * u); return t * 0.3 + s * 0.7; }
     function rnd(a, b){ return a + Math.random() * (b - a); }
     function clamp(v, a, b){ return v < a ? a : (v > b ? b : v); }
     function shuffle(a){ for (var i = a.length - 1; i > 0; i--){ var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
@@ -3641,13 +3632,13 @@ window._tiza = {areas:AREAS, doneModes:doneModes};
         var mx = (p0[0] + p1[0]) / 2 - dy / dist * arc, my = (p0[1] + p1[1]) / 2 + dx / dist * arc;
         j.geom = E('path', {d: 'M' + p0[0].toFixed(1) + ' ' + p0[1].toFixed(1) + 'Q' + mx.toFixed(1) + ' ' + my.toFixed(1) + ' ' + p1[0].toFixed(1) + ' ' + p1[1].toFixed(1), fill: 'none'}, S.od);
         j.L = j.geom.getTotalLength();
-        j.dur = clamp(dist / 2.6, 30, 420);
+        j.dur = clamp(dist / 5.2, 14, 170);
         return;
       }
       if (j.space === 'px' && (j.skip || !j.geom)){ j.skip = true; return; }
       var sc = j.space === 'logo' ? lp(0, 0)[2] : 1;
       var len = j.space === 'logo' ? j.L * sc : j.L, spd = j.space === 'logo' ? j.spd * sc : j.spd;
-      j.dur = clamp(len / spd * 1000, 120, 2600);
+      j.dur = clamp(len / (spd * 1.85) * 1000, 85, 1500) * (.92 + Math.random() * .16);
     }
     function finishJob(j, now){
       if (j.skip){ if (j.geom && j.geom.parentNode) j.geom.parentNode.removeChild(j.geom); return; }
@@ -3666,7 +3657,7 @@ window._tiza = {areas:AREAS, doneModes:doneModes};
       cur = [x, y];
       var k = clamp(lp(0, 0)[2] * 1940 / 230, .85, 1.25);
       var a = 32 + 5 * Math.sin(now / 260);
-      var jx = moving ? Math.sin(now / 47) * .35 : 0, jy = moving ? Math.cos(now / 53) * .35 : 0;
+      var jx = moving ? Math.sin(now / 71) * .5 : 0, jy = moving ? Math.cos(now / 83) * .45 : 0;
       S.stk.setAttribute('transform', 'translate(' + (x + jx).toFixed(2) + ' ' + (y + jy).toFixed(2) + ') scale(' + k.toFixed(2) + ')');
       S.sr.setAttribute('transform', 'rotate(' + a.toFixed(1) + ')');
     }
